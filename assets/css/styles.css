@@ -1,0 +1,66 @@
+/*
+  Author: Mitchell (BlxckSky_959)
+  Copyright (C) RED7 STUDIOS 2021
+  DO NOT REDISTRIBUTE OR COPY CODE
+*/
+
+/* Center something in the middle of the page. */
+.center {
+    /* Set the margin to 0 */
+    margin: 0;
+    /* Set the position to absolute */
+    position: absolute;
+    /* Set the top to 50 percent */
+    top: 50%;
+    /* Set the left to 50 percent */
+    left: 50%;
+    /* Transform for mozilla browsers */
+    -ms-transform: translate(-50%, -50%);
+    /* Transform for other browsers */
+    transform: translate(-50%, -50%);
+    /* Align all text to the center */
+    text-align: center;
+    /* Fix buttons not pressing */
+    z-index: 10;
+}
+
+/* Force something to the bottom of the page. */
+.parent-bottom {
+    position:relative;
+    float: left;
+    width: 91.5%;
+    min-width: 825px;
+    height: 100%;
+    text-align: left;
+    z-index: 1;
+    margin-left:3.7%;
+    margin-right:3.7%;
+    padding-left:0.5%;
+    padding-right:0.5%;
+}
+
+.bottom {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+}
+
+.bg {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
